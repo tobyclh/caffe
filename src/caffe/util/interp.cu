@@ -1,6 +1,6 @@
 // Copyright 2014 George Papandreou
 
-#include <cuda.h>
+#include "caffe/common.cuh"
 #include "caffe/common.hpp"
 #include "caffe/util/interp.hpp"
 
