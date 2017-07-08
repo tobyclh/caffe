@@ -103,6 +103,10 @@ if(BUILD_python)
   add_custom_target(pytest COMMAND python${python_version} -m unittest discover -s caffe/test WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/python )
   add_dependencies(pytest pycaffe)
 endif()
+find_package(MATIO REQUIRED)
+include_directories(${MATIO_INCLUDE_DIR})
+
+
 
 # ---[ uninstall target
 configure_file(
