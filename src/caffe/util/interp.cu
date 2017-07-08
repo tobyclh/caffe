@@ -1,6 +1,6 @@
 // Copyright 2014 George Papandreou
 
-
+#include "caffe/common.hpp"
 #include "caffe/common.cuh"
 #include "caffe/util/interp.hpp"
 
