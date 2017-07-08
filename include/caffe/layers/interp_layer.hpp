@@ -2,7 +2,7 @@
 #define CAFFE_INTERP_LAYER_HPP_
 
 #include <vector>
-
+#include "caffe/common.hpp"
 #include "caffe/blob.hpp"
 #include "caffe/layer.hpp"
 #include "caffe/proto/caffe.pb.h"
