@@ -1,7 +1,7 @@
 // Copyright 2014 George Papandreou
 
-#include "caffe/common.hpp"
 #include "caffe/common.cuh"
+#include "caffe/common.hpp"
 #include "caffe/util/interp.hpp"
 
 namespace caffe {
