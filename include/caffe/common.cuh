@@ -2,6 +2,7 @@
 
 #ifndef CAFFE_COMMON_CUH_
 #define CAFFE_COMMON_CUH_
+#endif
 
 #include <cuda.h>
 #if !defined(__CUDA_ARCH__) || __CUDA_ARCH__ >= 600
