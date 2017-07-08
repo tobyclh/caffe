@@ -9,6 +9,11 @@ find_package(Boost 1.55 REQUIRED COMPONENTS system thread filesystem)
 list(APPEND Caffe_INCLUDE_DIRS PUBLIC ${Boost_INCLUDE_DIRS})
 list(APPEND Caffe_LINKER_LIBS PUBLIC ${Boost_LIBRARIES})
 
+# ---[ MATIO
+find_package(MATIO REQUIRED)
+include_directories(${MATIO_INCLUDE_DIR})
+list(APPEND Caffe_LINKER_LIBS PUBLIC ${MATIO_LIBRARIES})
+
 # ---[ Threads
 find_package(Threads REQUIRED)
 list(APPEND Caffe_LINKER_LIBS PRIVATE ${CMAKE_THREAD_LIBS_INIT})

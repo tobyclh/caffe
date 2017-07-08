@@ -7,7 +7,6 @@ add_library(proto STATIC ${proto_hdrs} ${proto_srcs} ${proto_python})
 caffe_default_properties(proto)
 target_link_libraries(proto PUBLIC ${PROTOBUF_LIBRARIES} )
 target_include_directories(proto PUBLIC ${PROTOBUF_INCLUDE_DIR})
-
 list(INSERT Caffe_LINKER_LIBS 0 PUBLIC proto) # note, crucial to prepend!
 
 # --[ Caffe library
@@ -22,7 +21,7 @@ endif()
 
 add_library(caffe ${srcs})
 caffe_default_properties(caffe)
-target_link_libraries(caffe ${Caffe_LINKER_LIBS})# ${MATIO_LIBRARIES})
+target_link_libraries(caffe ${Caffe_LINKER_LIBS})
 target_include_directories(caffe ${Caffe_INCLUDE_DIRS}
                                  PUBLIC
                                  $<BUILD_INTERFACE:${Caffe_INCLUDE_DIR}>
